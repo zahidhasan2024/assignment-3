@@ -25,19 +25,7 @@
     <header>
         <div class="navbar container mx-auto justify-between">
             <div class="">
-                <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h8m-8 6h16" />
-                        </svg>
-                    </div>
-                    <ul tabindex="0"
-                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                        <li><a>Item 1</a></li>
-                    </ul>
-                </div>
+
                 <a class="btn text-3xl font-bold">
                     <i
                         class="fa-solid fa-arrow-up-long  w-[15px] h-[15px] p-5  flex items-center justify-center rounded-full rotate-45 bg-lime-400"></i>Rinterio
@@ -52,7 +40,7 @@
                     <li class=""><a class="hover:text-slate-900 text-slate-500 font-bold ">Contact Us</a></li>
                 </ul>
             </div>
-            <div class=" flex gap-5">
+            <div class="hidden lg:flex gap-5">
 
                 <button class="btn">
                     <div class="  ">
@@ -75,6 +63,15 @@
 
 
             </div>
+            <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                </div>
+            </div>
         </div>
     </header>
     <!-- main section -->
@@ -92,7 +89,8 @@
                             sophistication, featuring weathered wood, sleek metal accents, and large <br>
                             windows that flood the space with natural light.
                         </p>
-                        <button class="btn btn-circle flex w-[200px] mx-auto  h-[60px] bg-lime-200  border-lime-500">
+                        <button
+                            class="btn btn-circle flex w-full  md:w-[200px] mx-auto  h-[60px] bg-lime-200  border-lime-500">
                             <span class="text-xl">View Details</span>
                             <i
                                 class="fa-solid fa-arrow-up-long  w-[20px] h-[20px] p-5  flex items-center justify-center rounded-full rotate-45 bg-lime-500 text-black"></i>
@@ -102,7 +100,7 @@
             </div>
         </section>
 
-        <section class="container mx-auto">
+        <section class="container mx-auto py-5 my-5">
             <div
                 class="grid grid-cols-1 md:grid-cols-2 bg-[url('./assets/Vector.png')] bg-no-repeat p-10 gap-10 items-center">
                 <div class="text-div pt-5">
@@ -149,7 +147,7 @@
         </section>
 
         <!-- work  -->
-        <section class="container mx-auto">
+        <section class="container mx-auto  py-5 my-5">
             <div class="text-center">
                 <span class="bg-white rounded-full px-3 py-1 text-xl"> <i class="fa-solid fa-arrow-right-long"></i>
                     How we works
@@ -163,7 +161,7 @@
                 </p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-5">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-5 px-5 md:px-1">
                 <div class="card bg-pink-200 text-primary-content text-black p-3">
 
                     <div class="card-body  items-start">
@@ -213,6 +211,69 @@
 
         </section>
 
+        <!-- latest works  -->
+        <section class="container mx-auto py-10 my-5">
+            <div class="text-center">
+                <span class="bg-white rounded-full px-3 py-1 text-xl"> <i class="fa-solid fa-arrow-right-long"></i>
+                    Explore our Latest works
+                </span>
+
+
+                <h1 class="text-5xl font-bold mt-5"> Our Latest Portfolio
+
+                </h1>
+                <p class="py-6">
+                    The barn house captivates with its blend of rustic charm and modern sophistication, <br>
+                    featuring weathered wood, sleek metal accents
+                </p>
+            </div>
+
+
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-10">
+                <div class="card  md:flex-row border p-10 md:col-span-8">
+                    <img src="./assets/img1.png" alt="house" class="rounded-xl pr-8" />
+                    <div class=" flex flex-col justify-between">
+                        <h2 class="card-title font-bold text-2xl">Commercial</h2>
+                        <p>The barn house captivates with its blend of rustic charm
+                            and modern. The barn house captivates with its blend of
+                            rustic charm and modern </p>
+                        <div class="">
+                            <button class=" flex w-full mx-auto  h-[60px]  ">
+                                <span class="text-xl font-bold mr-3 pt-2">View Details</span>
+                                <i
+                                    class="fa-solid fa-arrow-up-long  w-[20px] h-[20px] p-5  flex items-center justify-center rounded-full rotate-45 bg-lime-500 text-black"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card  border p-10 md:col-span-4">
+                    <img src="./assets/img2.png" alt="house" class="rounded-xl" />
+                </div>
+                <div class="card border p-10 md:col-span-3">
+                    <img src="./assets/img3.png" alt="house" class="rounded-xl" />
+                </div>
+                <div class="card  md:flex-row border p-10 md:col-span-6">
+                    <img src="./assets/img4.png" alt="house" class="rounded-xl pr-10" />
+                    <div class=" flex flex-col justify-between">
+                        <h2 class="card-title font-bold text-2xl">Commercial</h2>
+                        <p>The barn house captivates with its blend of rustic charm
+                            and modern. The barn house captivates with its blend of
+                            rustic charm and modern </p>
+                        <div class="card-actions">
+                            <button class=" flex w-full mx-auto  h-[60px]  ">
+                                <span class="text-xl font-bold mr-3 pt-2">View Details</span>
+                                <i
+                                    class="fa-solid fa-arrow-up-long  w-[20px] h-[20px] p-5  flex items-center justify-center rounded-full rotate-45 bg-lime-500 text-black"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card  border p-10 md:col-span-3">
+                    <img src="./assets/img5.png" alt="house" class="rounded-xl" />
+                </div>
+            </div>
+        </section>
+
         <!-- lets connect  -->
         <section class="bg-[url('./assets/bg.jpg')] bg-no-repeat bg-cover py-10 my-5">
             <div class="container mx-auto">
@@ -241,66 +302,13 @@
 
             </div>
         </section>
-        <!-- latest works  -->
-        <section class="container mx-auto py-10 my-5">
-            <div class="text-center">
-                <span class="bg-white rounded-full px-3 py-1 text-xl"> <i class="fa-solid fa-arrow-right-long"></i>
-                    Explore our Latest works
-                </span>
 
-
-                <h1 class="text-5xl font-bold mt-5"> Our Latest Portfolio
-
-                </h1>
-                <p class="py-6">
-                    The barn house captivates with its blend of rustic charm and modern sophistication, <br>
-                    featuring weathered wood, sleek metal accents
-                </p>
-            </div>
-
-
-            <div class="grid grid-cols-1 md:grid-cols-12 gap-10">
-                <div class="card  md:flex-row border p-10 md:col-span-8">
-                    <img src="./assets/img1.png" alt="house" class="rounded-xl pr-8" />
-                    <div class=" flex flex-col justify-between">
-                        <h2 class="card-title font-bold text-2xl">Commercial</h2>
-                        <p>The barn house captivates with its blend of rustic charm
-                            and modern. The barn house captivates with its blend of
-                            rustic charm and modern </p>
-                        <div class="card-actions">
-                            <button class="btn btn-primary">Buy Now</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="card  border p-10 md:col-span-4">
-                    <img src="./assets/img2.png" alt="house" class="rounded-xl" />
-                </div>
-                <div class="card border p-10 md:col-span-3">
-                    <img src="./assets/img3.png" alt="house" class="rounded-xl" />
-                </div>
-                <div class="card  md:flex-row border p-10 md:col-span-6">
-                    <img src="./assets/img4.png" alt="house" class="rounded-xl pr-10" />
-                    <div class=" flex flex-col justify-between">
-                        <h2 class="card-title font-bold text-2xl">Commercial</h2>
-                        <p>The barn house captivates with its blend of rustic charm
-                            and modern. The barn house captivates with its blend of
-                            rustic charm and modern </p>
-                        <div class="card-actions">
-                            <button class="btn btn-primary">Buy Now</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="card  border p-10 md:col-span-3">
-                    <img src="./assets/img5.png" alt="house" class="rounded-xl" />
-                </div>
-            </div>
-        </section>
 
 
     </main>
 
     <!-- footer section -->
-    <footer class="footer footer-center bg-black text-primary-content p-10">
+    <footer class="footer footer-center bg-black text-primary-content  py-10 my-5">
         <aside>
             <a class=" btn bg-transparent border-0 text-white text-3xl font-bold">
                 <i
